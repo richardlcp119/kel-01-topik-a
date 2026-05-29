@@ -1,1 +1,12 @@
+# Mengabaikan file environment yang berisi kredensial rahasia
 .env
+
+# Mengabaikan folder volume database agar data tidak ikut ter-commit
+docker/db_data/
+
+# Mengabaikan folder volume WordPress agar file web/upload tidak ikut ter-commit
+docker/wp_data/
+
+# Mengabaikan semua sertifikat dan kunci SSL, KECUALI file .gitkeep
+docker/nginx/ssl/*
+!docker/nginx/ssl/.gitkeep
