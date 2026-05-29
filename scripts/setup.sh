@@ -4,7 +4,7 @@ sudo apt update && sudo apt upgrade -y
 echo "Installing Docker..."
 sudo apt install docker.io docker-compose -y
 
-echo "Installong Docker..."
+echo "Installing Docker..."
 sudo systemctl enable docker
 sudo systemctl start docker
 
